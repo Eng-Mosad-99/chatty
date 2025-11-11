@@ -1,3 +1,4 @@
+import 'package:chatty/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.red, brightness: Brightness.dark),
@@ -21,13 +22,7 @@ class MyApp extends StatelessWidget {
             seedColor: Colors.blue, brightness: Brightness.light),
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'Hello World!',
-          ),
-        ),
-      ),
+      home: const LoginScreen(),
     );
   }
 }
