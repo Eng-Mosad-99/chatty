@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../widgets/custom_text_form_field.dart';
+import 'forget_password.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -61,11 +62,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         GestureDetector(
                           child: const Text("Forget Password?"),
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //       builder: (context) => ForgetScreen(),
-                            //     ));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ForgetScreen(),
+                                ));
                           },
                         )
                       ],
@@ -114,7 +115,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-                  
                   ],
                 ),
               )
