@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../widgets/custom_text_form_field.dart';
 import 'forget_password.dart';
+import 'setup_profile.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -99,12 +100,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         padding: const EdgeInsets.all(16),
                       ),
                       onPressed: () {
-                        // Navigator.pushAndRemoveUntil(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) => SetupProfile(),
-                        //     ),
-                        //     (route) => false);
+                        Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SetupProfile(),
+                            ),
+                            (route) => false);
                       },
                       child: Center(
                         child: Text(
